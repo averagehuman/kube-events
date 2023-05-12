@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "kube-audit-log"
+version = "0.1.0"
+description = ""
+authors = ["averagehuman <cyclebelfast@gmail.com>"]
+readme = "README.md"
+packages = [{include = "kube_audit_log"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+aiohttp = "^3.8.4"
+pyyaml = "^6.0"
+
+[tool.poetry.scripts]
+kube-audit-log = "kube-audit-log.py"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
